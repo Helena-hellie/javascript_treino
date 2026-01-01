@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(1, 11, 63);
+    color: aliceblue;
+}
+
+main {
+    max-height: max-content;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgb(1, 11, 63), rgb(9, 31, 139));
+    border: 1px solid;
+    display: grid; 
+    align-items: center; /* Alinha verticalmente */
+}
+
+.container {
+    display: flex; /* Transforma o container em um flex container */
+}
+
+input {
+    margin: 0px auto 0px;
+    width: 30%;
+    padding: 10px;
+    /*background-color: rgb(194, 210, 245);*/
+    background-image: linear-gradient(to top, rgb(12, 42, 141), rgb(41, 81, 194));
+    color: white;
+    display: grid;
+}
+
+#botao_calc {
+    margin: 0px auto 0px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#botao_calc:hover {
+    background-color: rgb(216, 216, 252);
+}

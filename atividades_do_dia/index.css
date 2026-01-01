@@ -1,0 +1,49 @@
+/*fazendo um dark mode. O seletor html não aparece no código porém ela existe, para mexer nesse "papel de parede" da página usamos ela*/
+* { /*selecionadno tudo*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, input, select, button, option{ 
+  /*option pois em alguns computadores o fundo da data e horário ficam brancos, misturando com a fonte branca. Quando colocado o fundo se torna preto novamente*/
+  font-family: 'Inter', sans-serif;
+  background-color: #09090B;
+  color: #FAFAFA;
+}
+
+/* app */
+#app {
+  padding: 40px 20px;
+  max-width: 320px; /*alguns celularescehgam a essa alutra máxima*/
+  margin: auto;
+  /*border: 1px solid red; para ficar mehlor de evr e entender*/
+}
+/* form*/
+input, select {
+  all: unset; /*tudo que foi definido antes, seja no html ou css, ele tira as propriedades*/
+}
+
+input, select, button {
+  width: 100%;
+}
+
+.fields {
+  display: grid; /*vai manter cada elemento um abaixo do outro*/
+  gap: 8px; /*espaço entre os elementos*/
+}
+
+.field-wrapper {
+  padding: 18px;
+  background-color: #09090B;
+  border: 1px solid #27272A;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-wrapper:focus-within {
+  outline: 2px solid yellowgreen;
+} /*VÍDEO 32:52 !!!!!!!!!!!!!!!!!!!!!!!*/
